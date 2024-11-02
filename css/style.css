@@ -348,7 +348,7 @@ ul,li{
 	
 	.footer-3__logo {
 		width: 100%;
-		height: 26px;
+		height: auto;
 		margin-bottom: .2em;
 	}
 	
