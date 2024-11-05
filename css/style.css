@@ -377,9 +377,11 @@ ul,li{
 	padding:0;
 	margin:0;
 	width:100%;
+	justify-content: space-around; /* 均等に配置 */
  }
  
  #sp-fixed-menu li{
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 50%;
@@ -402,6 +404,13 @@ ul,li{
 	width: 100%;
 	padding:20px;
  }
+
+ #sp-fixed-menu img {
+	width: 30px; /* 幅を30pxに設定 */
+	height: 30px; /* 高さを30pxに設定 */
+	object-fit: contain; /* 画像がアスペクト比を維持しながら、指定されたサイズ内に収まるようにする */
+  }
+  
 /*PCの場合にはメニューを表示させない*/
 @media (min-width: 768px) {
 	.for-sp{
