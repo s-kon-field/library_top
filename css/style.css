@@ -265,6 +265,9 @@ ul,li{
 	}
 	.news_text a {
 	color: #333;
+	display: inline-block; /* 通常時はインラインブロックにしておく */
+    word-wrap: break-word;  /* 長い単語の途中で改行を挿入 */
+    word-break: break-word; /* 単語の途中で改行を挿入 */
 	}
 	
 	.news_btn {
@@ -303,7 +306,8 @@ ul,li{
 	margin-top: 10px;
 	text-overflow: ellipsis;
 	overflow: hidden;
-	}
+	word-wrap: break-word; /* 長いテキストの折り返し */
+    white-space: normal; /* 空白で折り返し */
 	}
 
 	.footer-3 {
