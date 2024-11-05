@@ -391,12 +391,12 @@ ul,li{
  
  /*左側メニューを緑色に*/
  #sp-fixed-menu {
-	background: #006036;
+	background: #d0a900;
  }
  
  /*ボタンを調整*/
  #sp-fixed-menu li a{
-	color: #fff;
+	color: #000;
 	text-align: center;
 	display:block;
 	width: 100%;
