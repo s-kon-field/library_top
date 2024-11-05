@@ -398,7 +398,8 @@ ul,li{
  
  #sp-fixed-menu li{
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
+	flex-flow: column;
 	align-items: center;
 	width: 50%;
 	padding:0;
@@ -407,7 +408,7 @@ ul,li{
 	border-right: 1px solid #fff;
  }
  
- /*左側メニューを緑色に*/
+ /*左側メニューを黄色に*/
  #sp-fixed-menu {
 	background: #d0a900;
  }
@@ -422,6 +423,7 @@ ul,li{
  }
 
  #sp-fixed-menu img {
+	padding-top: 10px;
 	width: 30px; /* 幅を30pxに設定 */
 	height: 30px; /* 高さを30pxに設定 */
 	object-fit: contain; /* 画像がアスペクト比を維持しながら、指定されたサイズ内に収まるようにする */
