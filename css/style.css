@@ -336,7 +336,7 @@ ul,li{
 	}
 	
 	.footer-3__logo {
-		width: 100%;
+		max-width: 20px;
 		height: auto;
 		margin-bottom: .2em;
 	}
@@ -381,7 +381,6 @@ ul,li{
 	position: fixed;
 	width: 100%;
 	bottom: 0px;
-	font-size: 0;
 	opacity: 0.9;
 	z-index: 99;
  }
@@ -429,9 +428,10 @@ ul,li{
 	object-fit: contain; /* 画像がアスペクト比を維持しながら、指定されたサイズ内に収まるようにする */
   }
   
-/*PCの場合にはメニューを表示させない*/
+  /*PCの場合にはメニューを表示させない*/
 @media (min-width: 768px) {
 	.for-sp{
 	   display:none;
 	 }
  } 
+}
