@@ -41,7 +41,7 @@ body {
 	padding: 30px 0;
 }
 #navwrap{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	padding: 15px 30px 15px 0;
@@ -49,9 +49,12 @@ body {
 .header_menu{
 	display: flex;
 }
-ul,li{
-	list-style: none;
-	margin: 0;
+ul {
+    list-style: none;
+    margin: 0;
+}
+li {
+    margin: 0;
 }
 .header_menu li a{
 	cursor: pointer;
@@ -63,7 +66,6 @@ ul,li{
 	display: none;
 }
 .main p{
-	padding: 500px 0;
 	text-align: center;
 }
 @media screen and (max-width:768px) {
@@ -123,7 +125,7 @@ ul,li{
 		box-sizing: border-box;
 	}
 	#switch:checked ~ #navwrap { 
-		display: block; 
+		display: none;
 		top: 0;
 	}
 	.header_menu{
@@ -153,7 +155,7 @@ ul,li{
     display: flex; /* 中のコンテンツを中央に配置するためのフレックスボックス */
     justify-content: center; /* 横方向の中央寄せ */
     align-items: center; /* 縦方向の中央寄せ */
-    color: white; /
+    color: white; 
 	width: 100%;
 	max-width: 960px;
 	margin-top: 100px;
@@ -278,7 +280,6 @@ ul,li{
 	.news_text a {
 	color: #333;
 	display: inline-block; /* 通常時はインラインブロックにしておく */
-    word-wrap: break-word;  /* 長い単語の途中で改行を挿入 */
     word-break: break-word; /* 単語の途中で改行を挿入 */
 	}
 	
@@ -295,6 +296,24 @@ ul,li{
 	word-wrap: break-word; /* 長いテキストの折り返し */
     white-space: normal; /* 空白で折り返し */
 	}
+}
+
+.slick01 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.slick01 li {
+    position: relative;
+    width: 100%; /* 幅を100%に設定 */
+    overflow: hidden; /* はみ出た部分を隠す */
+}
+
+.slick01 img {
+    width: 100%; /* 幅を100%に設定 */
+    height: auto; /* 高さは自動調整 */
+    display: block; /* 画像の下の余白をなくす */
 }
 
 	.footer-3 {
@@ -352,12 +371,3 @@ ul,li{
 		}
 	}
 
-	.slide-items {
-		width: 100%;
-		height: 100%;
-	  }
-	  
-	  .slide-items img {
-		width: 100%;
-		object-fit: cover;
-	  }
