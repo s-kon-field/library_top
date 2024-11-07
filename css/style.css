@@ -282,31 +282,6 @@ ul,li{
     word-break: break-word; /* 単語の途中で改行を挿入 */
 	}
 	
-	.news_btn {
-	text-align: center;
-	}
-	.news_btn a {
-	color: #006036;
-	}
-	.btn {
-	color: #006036;
-	padding: 10px 50px;
-	background: #fff;
-	border: 2px solid #006036;
-	border-radius: 50px;
-	transition: all 0.5s;
-	}
-	.btn:hover {
-	color: #fff;
-	background: #006036;
-	}
-	.btn:after {
-	font-family: 'Font Awesome 5 Free';
-	content: "\f0da";
-	font-weight: 900;
-	padding-left: 10px;
-	}
-	
 	@media screen and (max-width: 559px) {
 	.news_container {
 	width: 100%;
@@ -320,4 +295,59 @@ ul,li{
 	word-wrap: break-word; /* 長いテキストの折り返し */
     white-space: normal; /* 空白で折り返し */
 	}
+}
+
+	.footer-3 {
+		padding: 3rem 2rem 1.5rem;
+		background-color: #ececec;
+	}
+	
+	.footer-3__container {
+		display: grid;
+		justify-items: center;
+		grid-template-columns: repeat(5, 1fr);
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	
+	.footer-3__logo {
+		width: 104px;
+		height: 26px;
+		margin-bottom: .2em;
+	}
+	
+	.footer-3__title,
+	.footer-3__link {
+		margin: 0 0 .8em;
+		color: #333;
+		font-size: .9em;
+	}
+	
+	.footer-3__title {
+		font-weight: 600;
+	}
+	
+	.footer-3__list {
+		padding: 0;
+		list-style-type: none;
+	}
+	
+	.footer-3__link {
+		display: block;
+	}
+	
+	.footer-3__link:not(:hover) {
+		text-decoration: none;
+	}
+	
+	@media only screen and (max-width: 768px) {
+		.footer-3__container {
+			justify-items: start;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1em;
+		}
+	
+		.footer-3__head {
+			grid-column: 1/3;
+		}
 	}
